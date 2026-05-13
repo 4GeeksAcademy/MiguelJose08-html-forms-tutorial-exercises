@@ -35,8 +35,17 @@
 			/* ajuste de los inputs y el textarea */
 			input[type="text"],
 			textarea {
-				width: 98%;
+				width: 100%;
+				padding: 5px 5px;
 				box-sizing: border-box;
+			}
+			.button-container {
+				text-align: center;
+			}
+			.button-container input[type="submit"]:hover {
+				background-color: rgb(203, 159, 245);
+				color: white;
+				cursor: pointer;
 			}
 		</style>
 	</head>
@@ -102,7 +111,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2">
+					<td colspan="2" class="button-container">
 						<input type="submit" value="Enter my information" />
 					</td>
 				</tr>
