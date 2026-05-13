@@ -18,7 +18,7 @@ label {
 
 input[type="text"] {
 	border: none;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgb(230, 8, 8);
 	font-size: 16px;
 }
 

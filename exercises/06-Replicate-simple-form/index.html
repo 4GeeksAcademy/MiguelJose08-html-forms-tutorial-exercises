@@ -4,9 +4,40 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>4Geeks Academy</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
 		<style>
-			/* your code here */
+			/* Estilos generales de la tabla */
+			table {
+				border: 1px solid rgb(60, 59, 59);
+				width: 450px;
+				font-family: "Noto Serif", serif;
+			}
+			/* estilos para celdas normales y de encabezado */
+			th,
+			td {
+				border: 1px solid grey;
+				padding: 5px;
+				vertical-align: middle;
+			}
+			/* fondo morado para encabezado */
+			th {
+				background-color: rgb(204, 135, 249);
+				font-weight: 600;
+				text-align: center;
+			}
+			/* ancho de la primera columna */
+			td:first-child:not([colspan="2"]) {
+				width: 35%;
+			}
+			/* ajuste de los inputs y el textarea */
+			input[type="text"],
+			textarea {
+				width: 98%;
+				box-sizing: border-box;
+			}
 		</style>
 	</head>
 
@@ -17,22 +48,22 @@
 					<th>Name</th>
 					<th>value</th>
 				</tr>
+
 				<tr>
 					<td>Name</td>
-					<td>
-						<input type="text" />
-					</td>
+					<td><input type="text" /></td>
 				</tr>
+
 				<tr>
 					<td>Sex</td>
 					<td>
 						<div>
-							<label for="male">Male</label>
 							<input type="radio" name="sex" value="male" />
+							<label for="male">Male</label>
 						</div>
 						<div>
-							<label for="female">Female</label>
 							<input type="radio" name="sex" value="female" />
+							<label for="female">Female</label>
 						</div>
 					</td>
 				</tr>
@@ -45,6 +76,34 @@
 							<option value="blue">blue</option>
 							<option value="brown">brown</option>
 						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<div>
+							<input type="checkbox" />
+							<label for="altura">Over 6 feet tall</label>
+						</div>
+
+						<div>
+							<input type="checkbox" />
+							<label for="peso">Over 200 pounds</label>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<label for="ability">Describe your athletic ability:</label> <br />
+						<textarea name="athleticability:" id="ability" rows="4" cols="40"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Enter my information" />
 					</td>
 				</tr>
 			</table>
